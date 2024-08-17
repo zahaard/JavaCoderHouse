@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebidas Chiche</title>
+    <link rel="stylesheet" href="estilos.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header-section container">
+            <img class="logo" src="img/logoShop.png" alt="logo de la tienda">
+            <div>
+                <img onclick="showCart(this)" class="cart" src="img/cart.png" alt="carrito de compras">
+                <p class="count-product">0</p>
+            </div>
+            <div class="cart-products" id="products-id">
+                <p class="close-btn" onclick="closeBtn()">X</p>
+                <h3>Mi carrito</h3>
+                <div class="card-items">
+                    
+                </div>
+                <h2>Total: $<strong class="price-total">0</strong></h2>
+            </div>
+        </div>
+    </header>
+    <section class="container">
+        <div class="products">
+            <div class="carts">
+                <div>
+                    <img src="img/absolut 750.png" alt="absolut vodka">
+                    <p><span>20.000</span>$</p>
+                </div>
+                <p class="title">Absolut</p>
+                <a href="" data-id="1" class="btn-add-cart">agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="img/black label 750.jpg" alt="whiskey balck label">
+                    <p><span>12.000</span>$</p>
+                </div>
+                <p class="title"> Black Label</p>
+                <a href="" class="btn-add-cart" data-id="2">agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="img/budweiser 750.jpg" alt="budweiser">
+                    <p><span>2.500</span>$</p>
+                </div>
+                <p class="title">Budweiser</p>
+                <a href="" data-id="3" class="btn-add-cart">agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="img/doctor lemon 750.webp" alt="dr lemon">
+                    <p><span>3.500</span>$</p>
+                </div>
+                <p class="title">Dr.Lemon</p>
+                <a href="" data-id="4" class="btn-add-cart">agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="img/fernet_750_1_1_.png" alt="Fernet">
+                    <p><span>9.500</span>$</p>
+                </div>
+                <p class="title">Fernet</p>
+                <a href="" data-id="5" class="btn-add-cart">agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="img/gordons.jpg" alt="Gin Tonic">
+                    <p><span>8.500</span>$</p>
+                </div>
+                <p class="title"> Gordon`s Gin Tonic</p>
+                <a href="" data-id="6" class="btn-add-cart">agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="img/nuvo 750.jpg" alt="Nuvo">
+                    <p><span>20.000</span>$</p>
+                </div>
+                <p class="title"> Nuvo</p>
+                <a href="" data-id="7" class="btn-add-cart">agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="img/red 750.jpg" alt="Red Label">
+                    <p><span>9.000</span>$</p>
+                </div>
+                <p class="title"> Red Label</p>
+                <a href="" data-id="8" class="btn-add-cart">gregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="img/rutini.jpg" alt="Vino Rutini">
+                    <p><span>6.500</span>$</p>
+                </div>
+                <p class="title"> Rutini</p>
+                <a href="" data-id="9" class="btn-add-cart">agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="img/sky 750.webp" alt="Vodka Sky">
+                    <p><span>4.200</span>$</p>
+                </div>
+                <p class="title"> Sky</p>
+                <a href="" data-id="10" class="btn-add-cart">agregar al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="img/smirnoff-vodka-70cl_750x.webp" alt="Smirnoff Vodka">
+                    <p><span>3.750</span>$</p>
+                </div>
+                <p class="title"> Smirnoff</p>
+                <a href="" data-id="11" class="btn-add-cart">agregar al carrito</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script>
+        function showCart(x){
+            document.getElementById("products-id").style.display = "block";
+        }
+        function closeBtn(){
+             document.getElementById("products-id").style.display = "none";
+        }
+
+    </script>
+    <script src="scripts.js" ></script>
+</body>
+</html>
